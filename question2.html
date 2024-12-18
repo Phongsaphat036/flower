@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-b from-[#FFEAC5]  to-[#FFF8E8] to-white min-h-screen flex items-center justify-center">
+    <!-- Main Content -->
+    <div class="bg-white p-8 rounded-lg shadow-xl w-[700px] text-center grid grid-cols-1 gap-4">
+        <!-- Images -->
+        <div class="flex justify-center gap-4">
+            <img src="/image/gus.jpg" alt="Image 1" class="w-1/3 rounded-lg shadow-md">
+            <p class="self-center text-lg font-bold text-[#AB886D]">-OR-</p>
+            <img src="/image/karaoke.jpg" alt="Image 2" class="w-1/3 rounded-lg shadow-md">
+        </div>
+
+        <!-- Question -->
+        <h1 class="text-lg md:text-2xl font-bold text-[#AB886D] drop-shadow-lg">
+            ถ้าให้เลือกระหว่าง "เค้า" กับ "เค้า"
+        </h1>
+
+        <!-- Buttons -->
+        <div class="mt-auto flex justify-center gap-4">
+            <button onclick="rightAnswer()" 
+            class="bg-[#FFEAC5] text-[#674636] font-bold px-6 py-3 rounded-lg shadow-lg hover:bg-[#825B32] transition transform hover:scale-105">
+        เลือกเค้า🥺   
+    </button>
+            <button onclick="rightAnswer()" 
+                    class="bg-[#FFEAC5] text-[#674636] font-bold px-6 py-3 rounded-lg shadow-lg hover:bg-[#825B32] transition transform hover:scale-105">
+                เลือกเค้านะะะ🙏🏻
+            </button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        function wrongAnswer() {
+            window.location.href = "wrong1.html";
+        }
+
+        function rightAnswer() {
+            window.location.href = "success2.html";
+        }
+    </script>
+</body>
+</html>

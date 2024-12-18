@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-b from-[#FFEAC5]  to-[#FFF8E8] min-h-screen flex items-center justify-center">
+    <!-- Main Content -->
+    <div class="bg-white p-8 rounded-lg shadow-xl max-w-lg w-full text-center space-y-6">
+
+        <img src="/image/gus2.jpg" alt="">
+
+        <h1 class="text-lg md:text-1xl  text-[#AB886D] drop-shadow-lg">
+            ถ้าให้เลือก ระหว่าง เงิน 1,000,000 กับเค้า เบ้บบตะเลือกอะไร
+        </h1>
+
+        <!-- Buttons -->
+        <div class="mt-6 flex justify-center gap-4">
+            <button onclick="wrongAnswer()" 
+                    class="bg-[#FFEAC5] text-[#674636] font-bold px-6 py-3 rounded-lg shadow-lg hover:bg-[#825B32] transition transform hover:scale-105">
+                เลือกเงินน
+            </button>
+            <button onclick="rightAnswer()" 
+                    class="bg-[#FFEAC5] text-[#674636] px-6 py-3  font-bold shadow-lg hover:bg-[#825B32] transition transform hover:scale-105">
+                เลือกเค้าาา
+            </button>
+        </div>
+    </div>
+
+
+    <script>
+        function wrongAnswer() {
+            
+            window.location.href = "wrong1.html";
+        }
+
+        function rightAnswer() {
+           
+            window.location.href = "success1.html";
+        }
+    </script>
+</body>
+</html>
